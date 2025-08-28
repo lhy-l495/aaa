@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ book.title }}</h2>
+<p><strong>Author:</strong> {{ book.author }}</p>
+<p><strong>Price:</strong> ${{ book.price }}</p>
+<p><strong>Seller:</strong> {{ seller.username if seller else 'Unknown' }}</p>
+{% endblock %}
